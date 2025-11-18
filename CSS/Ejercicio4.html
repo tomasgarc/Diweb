@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bloque Adaptable</title>
+  <style>
+    #adaptable {
+      background: #74b9ff;
+      padding: 1.25em;
+      margin: 1em;
+      display: block;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-sizing: border-box;
+      font-family: system-ui, sans-serif;
+    }
+
+    @media (max-width: 500px) {
+      #adaptable { background: #ff7675; }
+    }
+
+    @media print {
+      #adaptable { background: #fff; border: 1px solid #000; }
+    }
+  </style>
+</head>
+<body>
+  <div id="adaptable">
+    <h2>Bloque adaptable.</h2>
+    <p>Este bloque cambia de color si la pantalla es muy pequeña, pruebalo!</p>
+  </div>
+</body>
+</html>

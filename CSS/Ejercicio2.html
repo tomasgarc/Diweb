@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Perfil con variables CSS</title>
+  <style>
+    :root {
+      --principal: #4a8de3;
+      --secundario: hsl(255, 15%, 67%);
+      --acento: rgb(255, 180, 90);
+    }
+
+    #perfil {
+      background: var(--secundario);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 320px;
+      margin: 40px auto;
+      font-family: system-ui, sans-serif;
+    }
+
+    .nombre {
+      color: var(--principal);
+      font-size: 1.5em;
+      position: relative;
+      padding-left: 16px;
+    }
+
+    .nombre::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: var(--principal);
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    #perfil p {
+      color: rgba(0,0,0,0.8);
+      margin-top: 10px;
+    }
+
+    .boton {
+      display: inline-block;
+      background: var(--acento);
+      padding: 10px 16px;
+      border-radius: 6px;
+      margin-top: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
+    }
+
+    .boton:hover {
+      opacity: .8;
+    }
+  </style>
+</head>
+<body>
+  <div id="perfil">
+    <div class="nombre">😊Tomás García Chaves</div>
+    <p>Texto increiblemente descriptivo.</p>
+    <a class="boton" href="#">Botón</a>
+  </div>
+</body>
+</html>
