@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub de Ejercicios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tomás García Chaves // Diseño de Interfaces WEB // 2025/26</h1>
+    </header>
+
+    <main>
+        <section id="tema1" class="apartado">
+            <h2>/ TEMA 1 // CSS /</h2>
+            <div class = "ejercicios">
+            <a href="CSS/Ejercicio1.html" target="_blank" class="btn">Ejercicio 1</a>
+            <a href="CSS/Ejercicio2.html" target="_blank" class="btn">Ejercicio 2</a>
+            <a href="CSS/Ejercicio3.html" target="_blank" class="btn">Ejercicio 3</a>
+            </div>
+        </section>
+    </main>
+<script>
+  const temas = document.querySelectorAll(".apartado h2");
+
+temas.forEach(h2 => {
+    h2.addEventListener("click", () => {
+        const ejercicios = h2.nextElementSibling;
+        ejercicios.classList.toggle("open");
+    });
+});
+</script>
+</body>
+</html>
