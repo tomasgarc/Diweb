@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 4 - Sidebar con Menú</title>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .flex-container {
+            display: flex; 
+            min-height: 100vh; 
+        }
+
+        .sidebar {
+            flex: 1; 
+            background-color: #79a7bc; 
+            padding: 20px;
+        }
+
+        .main-content {
+            flex: 8; 
+            background-color: #d8e5e6; 
+            padding: 20px;
+        }
+
+        .menu {
+            list-style: none; 
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu li {
+            padding: 10px 0;
+            margin-bottom: 5px;
+            
+            border-bottom: 1px solid #a9a9a9;
+            
+            font-weight: bold;
+        }
+
+        .menu li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex-container">
+
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <li>Home</li>
+                    <li>Servicios</li>
+                    <li>Opciones</li>
+                    <li>Planes</li>
+                    <li>Contacto</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            Esto sería el contenido principal
+        </main>
+
+    </div>
+
+</body>
+</html>

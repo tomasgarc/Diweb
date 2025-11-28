@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 5 - Card con Flexbox</title>
+    
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+        }
+
+        .card-header {
+            background-color: #222;
+            color: white;
+            padding: 10px;
+            
+            /* Usando Flexbox para centrar el texto (Título H2) */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50px; /* Altura mínima para centrado vertical */
+        }
+
+        .card-header h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .card-body {
+            padding: 20px;
+            color: #333;
+            min-height: 150px;
+        }
+
+        .card-footer {
+            background-color: #a0a0a0;
+            color: white;
+            padding: 10px;
+
+            /* Usando Flexbox para centrar el texto (Pie H4) */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 40px; /* Altura mínima para centrado vertical */
+        }
+
+        .card-footer h4 {
+            margin: 0;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        
+        <div class="card-header">
+            <h2>Tarjeta de presentación</h2>
+        </div>
+
+        <div class="card-body">
+            Contenido del cuerpo de la tarjeta
+        </div>
+
+        <div class="card-footer">
+            <h4>Pie de la tarjeta</h4>
+        </div>
+
+    </div>
+
+</body>
+</html>

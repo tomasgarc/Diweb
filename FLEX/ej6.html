@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 6 - Grupo de Tarjetas (Card Set)</title>
+    
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* 🏆 Contenedor Principal Flexbox para las Tarjetas */
+        .card-set {
+            display: flex;
+            /* Distribuye el espacio libre: entre las tarjetas Y a los lados */
+            justify-content: space-around; 
+            align-items: flex-start; /* Alinea las tarjetas arriba */
+            min-height: 400px; /* Altura mínima para mostrar el espaciado si el contenido es corto */
+            padding: 10px;
+        }
+
+        /* Estilo General de la Tarjeta */
+        .card {
+            width: 280px; /* Ancho fijo para todas las tarjetas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            
+            /* Usamos Flexbox para organizar verticalmente el Header, Body y Footer */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Encabezado (Barra de título) */
+        .card-header {
+            background-color: #222;
+            color: white;
+            height: 40px; /* Requisito: 40px de alto */
+            font-weight: bold;
+            font-size: 1.1em;
+            
+            /* Centrado simple del texto */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Cuerpo de la Tarjeta */
+        .card-body {
+            padding: 15px;
+            color: #333;
+            /* El cuerpo debe ocupar el espacio restante */
+            flex-grow: 1; 
+        }
+
+        /* Pie de Página */
+        .card-footer {
+            background-color: #a0a0a0;
+            color: white;
+            height: 30px; /* Requisito: 30px de alto */
+            font-size: 0.9em;
+            
+            /* Centrado simple del texto */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0; /* Asegura que no se encoja si el cuerpo es grande */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-set">
+        
+        <div class="card">
+            <div class="card-header">
+                Tarjeta Izquierda
+            </div>
+            <div class="card-body">
+                Contenido del cuerpo<br>
+                Contenido del cuerpo<br>
+                Contenido del cuerpo
+            </div>
+            <div class="card-footer">
+                Pie
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                Tarjeta centro
+            </div>
+            <div class="card-body">
+                Contenido del cuerpo
+            </div>
+            <div class="card-footer">
+                Pie
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                Tarjeta derecha
+            </div>
+            <div class="card-body">
+                Contenido del cuerpo<br>
+                Contenido del cuerpo
+            </div>
+            <div class="card-footer">
+                Pie
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
