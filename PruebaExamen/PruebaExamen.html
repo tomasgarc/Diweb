@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="container">
+
+    <header>
+        <h1>Prueba DAW2 - HTML&CSS</h1>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Cursos</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <main>
+        <h2>Cursos disponibles</h2>
+        <section class="tarjetas">
+            <div class="tarjeta">
+                <img src="img"></img>
+                <h3>HTML Y CSS</h3>
+                <button>Ver más</button>
+            </div>
+            <div class="tarjeta">
+                <img src="img"></img>
+                <h3>JavaScript</h3>
+                <button>Ver más</button>
+            </div>
+            <div class="tarjeta">
+                <img src="img"></img>
+                <h3>Diseño Web</h3>
+                <button>Ver más</button>
+            </div>
+        </section>
+
+        <h2>Precios y disponibilidad</h2>
+        <section class="tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tramo horario</th>
+                        <th>Curso</th>
+                        <th>Nivel</th>
+                        <th>Horas</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Mañana</td>
+                        <td>HTML Y CSS</td>
+                        <td>Básico</td>
+                        <td>40</td>
+                        <td>Abierto</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Medio</td>
+                        <td>60</td>
+                        <td>Cerrado</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Total</td>
+                        <td>100</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <h2>Formulario de inscripción</h2>
+        <section class="formulario">
+            <input type="text" placeholder="Nombre y apellidos">
+            <input type="email" placeholder="Email">
+            <input type="date">
+            <select>
+                <option value="#">Online</option>
+                <option value="#">Presencial</option>
+            </select>
+            <div>
+                <input type="checkbox">
+                <a>Acepto términos</a>
+            </div>
+            <button class="submit">Enviar</button>
+        </section>
+    </main>
+    <aside>
+        <h2>Información adicional</h2>
+    </aside>
+    <footer>
+        <p>© 2025 TechAcademy</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
